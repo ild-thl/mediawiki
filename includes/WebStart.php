@@ -55,7 +55,16 @@ if ( $IP === false ) {
 // (use a callback because it depends on TemplateParser)
 if ( !defined( 'MW_CONFIG_CALLBACK' ) ) {
 	if ( !defined( 'MW_CONFIG_FILE' ) ) {
-		define( 'MW_CONFIG_FILE', "$IP/LocalSettings.php" );
+		# changed by LOOP THL for LOOP farm functionality
+		#define( 'MW_CONFIG_FILE', "$IP/LocalSettings.php" );
+		$servername = $_SERVER[ 'SERVER_NAME' ];
+		$loop_exists = file_exists( "$IP/LocalSettings/LocalSettings_" . $servername . ".php" );
+		if ( !$loop_exists ) {
+			define('MW_CONFIG_FILE', "$IP/doesnotexist.php" ); # dummy file, does not exist
+		} else {
+			define('MW_CONFIG_FILE', "$IP/LocalSettings.php" );
+		}
+		# end of changes by LOOP THL
 	}
 	if ( !is_readable( MW_CONFIG_FILE ) ) {
 

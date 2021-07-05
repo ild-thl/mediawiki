@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
 	<head>
 		<meta charset="UTF-8" />
-		<title>MediaWiki {{version}}</title>
+		<title>LOOP 2 - MediaWiki {{version}}</title>
 		<style media="screen">
 			body {
 				color: #000;
@@ -17,22 +17,19 @@
 		</style>
 	</head>
 	<body>
-		<img src="{{path}}resources/assets/mediawiki.png" alt="The MediaWiki logo" />
+		<img src="{{path}}skins/Loop/resources/img/logo_loop.svg" alt="LOOP logo" />
 
-		<h1>MediaWiki {{version}}</h1>
 		<div class="error">
 		{{#localSettingsExists}}
 			<p>LocalSettings.php not readable.</p>
 			<p>Please correct file permissions and try again.</p>
 		{{/localSettingsExists}}
 		{{^localSettingsExists}}
-			<p>LocalSettings.php not found.</p>
-			{{#installerStarted}}
-				<p>Please <a href="{{path}}mw-config/index.php">complete the installation</a> and download LocalSettings.php.</p>
-			{{/installerStarted}}
-			{{^installerStarted}}
-				<p>Please <a href="{{path}}mw-config/index.php">set up the wiki</a> first.</p>
-			{{/installerStarted}}
+			<br>
+			<p>Die Konfigurationsdatei konnte nicht gefunden werden.<br>
+			Bitte haben Sie noch etwas Geduld, bis das LOOP fertig konfiguriert wurde.</p>
+			<br>
+			<p><a href="https://www.eduloop.de">Anleitung & Dokumentation auf eduloop.de</a></p>
 		{{/localSettingsExists}}
 		</div>
 	</body>

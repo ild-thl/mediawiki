@@ -1822,7 +1822,7 @@
 	"upload-form-label-infoform-description-tooltip": "Beschreibe kurz alles bedeutende über das Werk.\nErwähne für ein Foto die abgebildeten hauptsächlichen Dinge, das Ereignis oder den Ort.",
 	"upload-form-label-usage-title": "Verwendung",
 	"upload-form-label-usage-filename": "Dateiname",
-	"upload-form-label-own-work": "Dies ist mein eigenes Werk",
+	"upload-form-label-own-work": "Für dieses Werk liegen die Nutzungsrechte vor",
 	"upload-form-label-infoform-categories": "Kategorien",
 	"upload-form-label-infoform-date": "Datum",
 	"upload-form-label-own-work-message-generic-local": "Ich bestätige, dass ich diese Datei gemäß den Nutzungsbedingungen und Lizenzrichtlinien von {{SITENAME}} hochlade.",

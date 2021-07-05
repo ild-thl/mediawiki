@@ -658,7 +658,11 @@ abstract class Installer {
 		global $wgExtensionDirectory, $wgStyleDirectory;
 
 		Wikimedia\suppressWarnings();
-		$_lsExists = file_exists( "$IP/LocalSettings.php" );
+		# changed by LOOP THL for LOOP farm functionality
+		#$_lsExists = file_exists( "$IP/LocalSettings.php" );
+		$servername = $_SERVER[ "SERVER_NAME" ];
+		$_lsExists = file_exists( "$IP/LocalSettings/LocalSettings_$servername.php" );
+		# end of LOOP THL changes
 		Wikimedia\restoreWarnings();
 
 		if ( !$_lsExists ) {
