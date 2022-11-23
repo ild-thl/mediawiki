@@ -1,4 +1,10 @@
-# MediaWiki
+# MediaWiki - LOOP Farm Edition
+
+The installer wizard is disabled. An extension for installation will be provided at a later date.
+
+LocalSettings Files are now split. There is a main /LocalSettings.php file and instance config files located at /LocalSettings/LocalSettings_*LOOP Instance Domain*.php. The main file requires some additional code (given in LocalSettings.md) at the end of the file to run MediaWiki successfully as a farm.
+
+----------------------
 
 MediaWiki is a free and open-source wiki software package written in PHP. It
 serves as the platform for Wikipedia and the other Wikimedia projects, used
