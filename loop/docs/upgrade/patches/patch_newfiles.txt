@@ -1,0 +1,33 @@
+diff --git a/LocalSettings/.gitignore b/LocalSettings/.gitignore
+new file mode 100644
+index 0000000000..99bfc666e8
+--- /dev/null
++++ b/LocalSettings/.gitignore
+@@ -0,0 +1,3 @@
++*
++!.gitignore
++!LocalSettings_www.example.org.md
+diff --git a/LocalSettings/LocalSettings_www.example.org.md b/LocalSettings/LocalSettings_www.example.org.md
+new file mode 100644
+index 0000000000..17a7f6f9c7
+--- /dev/null
++++ b/LocalSettings/LocalSettings_www.example.org.md
+@@ -0,0 +1,10 @@
++<?php
++$wgSitename			= "";
++$wgDBname			= "";
++$wgDBuser			= "";
++$wgDBpassword		= "";
++$wgServer			= "";
++$wgSecretKey		= "";
++$wgUpgradeKey		= "";
++$wgUploadDirectory	= "";
++$wgUploadPath		= "";
+diff --git a/robots/.gitignore b/robots/.gitignore
+new file mode 100644
+index 0000000000..d6b7ef32c8
+--- /dev/null
++++ b/robots/.gitignore
+@@ -0,0 +1,2 @@
++*
++!.gitignore
