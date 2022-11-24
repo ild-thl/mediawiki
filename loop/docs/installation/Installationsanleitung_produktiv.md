@@ -11,7 +11,7 @@ Diese Anleitung bezieht sich auf MediaWiki 1.35.
 - MariaDB oder MySQL
 
 1. Server für Farm Konfigurieren
-	- Der Webserver muss so konfiguriert sein, dass alle Subdomains auf den mediawiki Ordner zeigen. Eine Installation kann so viele verschiedene LOOPs unter Subdomains betreiben. [Auszüge der httpd Konfiguration](loop_httpd.md) 
+	- Der Webserver muss so konfiguriert sein, dass alle Subdomains auf den mediawiki Ordner zeigen. Eine Installation kann so viele verschiedene LOOPs unter Subdomains betreiben. [Auszüge der httpd Konfiguration](loop_httpd.txt) 
 
 	Ein Alias für .../mediawiki/index.php ermöglicht kurze Artikel URLs (konfiguriert in $wgArticlePath) wie z.B. https://{fqdn}/loop/Startseite anstatt https://{fqdn}/mediawiki/index.php/Startseite. Die Dateien unter /mediawiki müssen unter {fqdn}/mediawiki erreichbar sein. 
 
@@ -31,7 +31,7 @@ Diese Anleitung bezieht sich auf MediaWiki 1.35.
 	3.2 Ein weiteres Datenbank-Update durchführen: `php maintenance/update.php --quick`
 
 4. Haupt-LocalSettings Datei anpassen.
-	- Inhalt von [LocalSettings.md](LocalSettings_prod.md) ans Ende der Datei /mediawiki/LocalSettings.php anfügen. 
+	- Inhalt von [LocalSettings.txt](LocalSettings_prod.txt) ans Ende der Datei /mediawiki/LocalSettings.php anfügen. 
 	Wichtig: Diese Variable anpassen: `$wgScriptPath = "/mediawiki";` (Übereinstimmend mit dem mediawiki-Alias in 1.)
 
 	Ggf. weitere Anpassung nach Bedarf, siehe Dokumentation https://www.mediawiki.org/wiki/Manual:LocalSettings.php/de 
@@ -39,7 +39,7 @@ Diese Anleitung bezieht sich auf MediaWiki 1.35.
 5. Einzelne Farm-LocalSettings anlegen
 	- Jedes LOOP unter benötigt eine eigene Konfigurationsdatei. Die Dateien werden in /mediawiki/LocalSettings/ abgelegt. 
 	Namensschema: LocalSettings_{fqdn}.php, also z.B. LocalSettings_loop.example.de.php
-	- Inhalt von [LocalSettings_farm.md](LocalSettings_single.md) einfügen und Variablen füllen.
+	- Inhalt von [LocalSettings_single.txt](LocalSettings_single.txt) einfügen und Variablen füllen.
 	- Die Datei kann (bis auf <?php) leer gelassen werden, um die Konfiguration der Haupt-LocalSettings zu übernehmen. Sie muss aber vorhanden sein.
 	- Hier kann auch weitere Konfiguration (z.B. Sprache) eingefügt werden, die nicht für alle LOOPs gelten soll.
 

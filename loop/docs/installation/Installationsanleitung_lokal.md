@@ -24,7 +24,7 @@ Voraussetzungen:
 	- weiter
 	- Installation sollte abgeschlossen sein; weiter
 5. Heruntergeladene LocalSettings.php nach /path/to/mediawiki/LocalSettings.php verschieben
-6. LocalSettings unten ergänzen um Inhalt aus [LocalSettings_local.md](LocalSettings_local.md); Dev-Settings Kommentar bei Bedarf entfernen (ganz unten)
+6. LocalSettings unten ergänzen um Inhalt aus [LocalSettings_local.txt](LocalSettings_local.txt); Dev-Settings Kommentar bei Bedarf entfernen (ganz unten)
 7. http://localhost/mediawiki/ aufrufen und einloggen
 
 Manche Extensions brauchen weitere Konfiguration, z.B. SyntaxHighlight und Math. Das ist für Entwicklung an LOOP aber nicht vorrangig.
