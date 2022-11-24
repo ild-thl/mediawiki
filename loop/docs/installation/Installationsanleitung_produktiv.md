@@ -16,10 +16,10 @@ Diese Anleitung bezieht sich auf MediaWiki 1.35.
 	Ein Alias für .../mediawiki/index.php ermöglicht kurze Artikel URLs (konfiguriert in $wgArticlePath) wie z.B. https://{fqdn}/loop/Startseite anstatt https://{fqdn}/mediawiki/index.php/Startseite. Die Dateien unter /mediawiki müssen unter {fqdn}/mediawiki erreichbar sein. 
 
 2. Skript ausführen
-	- Ordner "mediawiki" im web root anlegen und dort das [Installationsskript](install_mw_loop_1_35_prod.sh) ausführen. `bash /path/to/script.sh`
+	- Ordner "mediawiki" im web root anlegen und dort das [Installationsskript](install_mw_loop_1_35_prod.sh) ausführen. (z.B. `bash /path/to/script.sh`)
 
 3. MW-Installationsskript ausführen
-	- MediaWiki über CLI installiert. Das Skript legt eine Datenbank und einen Images Ordner an. Siehe Dokumentation https://www.mediawiki.org/wiki/Manual:Install.php 
+	- MediaWiki über CLI installiert. Das Skript legt eine Konfigurationsdatei und eine Datenbank an. Siehe Dokumentation https://www.mediawiki.org/wiki/Manual:Install.php 
 
 	Hier wird das "Haupt-LOOP" angelegt, hier am Beispiel loop.example.de. 
 	
@@ -47,16 +47,13 @@ Diese Anleitung bezieht sich auf MediaWiki 1.35.
 	- Wenn die Haupt-LocalSettings und die Farm-LocalSettings angelegt sind und alles stimmt, ist loop.example.de nun erreichbar.
 	- Bei der Installation wurde ein User "Admin" angelegt mit dem in Schritt 3.1 angepassten Passwort. 
 
-7. Import von LOOPs
+# Import von LOOPs
 	Soll ein LOOP von einer anderen Instanz importiert werden, muss die Datenbank und der Images-Ordner übertragen werden. 
 
-	7.1 Datenbank importieren
-
-	7.2 Images Ordner in /mediawiki/images/loop.example.de kopieren
-
-	7.3 Farm-LocalSettings anlegen mit Datenbankname und Images-Ordner
-
-	7.4 Ggf. Passwort des Admin Users ändern https://www.mediawiki.org/wiki/Manual:ChangePassword.php 
+	- Datenbank anlegen und importieren
+	- Images Ordner nach /mediawiki/images/loop.example.de kopieren
+	- Farm-LocalSettings anlegen mit Datenbankname und Images-Ordner
+	- Ggf. Passwort des Admin Users ändern https://www.mediawiki.org/wiki/Manual:ChangePassword.php 
 
 # Empfehlungen zur Namensgebung
 In einer MW-Instanz können viele LOOPs entstehen. Es ist sinnvoll, Datenbanken und Images-Ordner stets nach der fqdn des LOOPs zu benennen, um keine Verwechslung zu riskieren. 
