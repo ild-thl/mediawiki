@@ -64,7 +64,18 @@ require_once __DIR__ . '/BootstrapHelperFunctions.php';
 // If no LocalSettings file exists, try to display an error page
 // (use a callback because it depends on TemplateParser)
 if ( !defined( 'MW_CONFIG_CALLBACK' ) ) {
-	wfDetectLocalSettingsFile();
+
+	# changed by LOOP THL for LOOP farm functionality
+	#wfDetectLocalSettingsFile();
+	$servername = $_SERVER[ 'SERVER_NAME' ];
+	$loop_exists = @file_exists( "./LocalSettings/LocalSettings_" . $servername . ".php" );
+	if ( !$loop_exists ) {
+		define('MW_CONFIG_FILE', "./doesnotexist.php" ); # dummy file
+	} else {
+		define('MW_CONFIG_FILE', "./LocalSettings.php" );
+	}
+	# end of changes by LOOP THL
+
 	if ( !is_readable( MW_CONFIG_FILE ) ) {
 		define( 'MW_CONFIG_CALLBACK', 'wfWebStartNoLocalSettings' );
 	}

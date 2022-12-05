@@ -89,3 +89,11 @@ Thumbs.db
 # Docker
 docker-compose.override.yml
 .env
+
+# LOOP
+/loop/tmp/*
+/extensions/*
+/images/*
+!/images/README
+!/images/.htaccess
+/LoopSettings.php
