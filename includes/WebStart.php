@@ -66,9 +66,10 @@ require_once __DIR__ . '/BootstrapHelperFunctions.php';
 if ( !defined( 'MW_CONFIG_CALLBACK' ) ) {
 
 	# changed by LOOP THL for LOOP farm functionality
-	#wfDetectLocalSettingsFile();
+	wfDetectLocalSettingsFile();
 	$servername = $_SERVER[ 'SERVER_NAME' ];
 	$loop_exists = @file_exists( "./LocalSettings/LocalSettings_" . $servername . ".php" );
+	
 	if ( !$loop_exists ) {
 		define('MW_CONFIG_FILE', "./doesnotexist.php" ); # dummy file
 	} else {
