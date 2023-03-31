@@ -668,10 +668,15 @@ abstract class Installer {
 		// phpcs:ignore MediaWiki.VariableAnalysis.UnusedGlobalVariables
 		global $wgExtensionDirectory, $wgStyleDirectory;
 
+		# changed by LOOP THL for LOOP farm functionality
 		// This will also define MW_CONFIG_FILE
-		$lsFile = wfDetectLocalSettingsFile( $IP );
+		#$lsFile = wfDetectLocalSettingsFile( $IP );
 		// phpcs:ignore Generic.PHP.NoSilencedErrors
-		$lsExists = @file_exists( $lsFile );
+		#$lsExists = @file_exists( $lsFile );
+		$lsFile = "";
+		$servername = $_SERVER[ "SERVER_NAME" ];
+		$lsExists = @file_exists( "$IP/LocalSettings/LocalSettings_$servername.php" );
+		# end of LOOP THL changes
 
 		if ( !$lsExists ) {
 			return false;
