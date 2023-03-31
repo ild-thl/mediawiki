@@ -15,7 +15,8 @@
 			"Universal Life",
 			"WikiiiTranslator",
 			"לערי ריינהארט",
-			"아라"
+			"아라",
+			"Ausir"
 		]
 	},
 	"tog-underline": "Suliñar los atamientos:",
@@ -61,7 +62,7 @@
 	"editfont-monospace": "Tipografía que cuvre lugar fikso",
 	"editfont-sansserif": "Tipografía sans-serif",
 	"editfont-serif": "Tipografía serif",
-	"sunday": "Alhadh",
+	"sunday": "Alhad",
 	"monday": "Lunes",
 	"tuesday": "martes",
 	"wednesday": "Miércoles",
@@ -136,7 +137,7 @@
 	"mypage": "Hoja",
 	"mytalk": "Diskusyón",
 	"anontalk": "Diskusyón para este adresso de IP",
-	"navigation": "Navigasyon",
+	"navigation": "Navigación",
 	"and": "&#32;i",
 	"faq": "DDS",
 	"actions": "Aksiones",
@@ -148,7 +149,7 @@
 	"tagline": "De {{SITENAME}}",
 	"help": "Ayudo",
 	"search": "Buxcar",
-	"searchbutton": "Bushkar",
+	"searchbutton": "Buxcar",
 	"go": "Ir",
 	"searcharticle": "Yir",
 	"skin-view-history": "Ver la istoria",

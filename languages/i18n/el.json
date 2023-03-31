@@ -69,7 +69,9 @@
 			"Απεργός",
 			"Περίεργος",
 			"לערי ריינהארט",
-			"아라"
+			"아라",
+			"Aitolos",
+			"P.a.a"
 		]
 	},
 	"tog-underline": "Υπογράμμιση συνδέσμων:",
@@ -1054,7 +1056,7 @@
 	"showingresultsinrange": "Παρακάτω {{PLURAL:$1|εμφανίζεται μέχρι <strong>1</strong> αποτέλεσμα|εμφανίζονται μέχρι <strong>$1</strong> αποτελέσματα}} σε εύρος από το Νο <strong>$2</strong> μέχρι το Νο <strong>$3</strong>.",
 	"search-showingresults": "{{PLURAL:$5|Αποτέλεσμα <strong>$1</strong> από <strong>$3</strong>|Αποτελέσματα <strong>$1 - $2</strong> από <strong>$3</strong>}}",
 	"search-nonefound": "Δεν υπάρχουν αποτελέσματα που να ικανοποιούν το ερώτημα.",
-	"search-nonefound-thiswiki": "Δεν υπάρχουν αποτελέσματα που να ικανοποιούν το ερώτημα σε αυτόν τον ιστότοπο.",
+	"search-nonefound-thiswiki": "Δεν υπήρχαν αποτελέσματα που να ταιριάζουν με το ερώτημα σε αυτόν τον ιστότοπο.",
 	"powersearch-legend": "Αναλυτική αναζήτηση",
 	"powersearch-ns": "Αναζήτηση στους ονοματοχώρους:",
 	"powersearch-togglelabel": "Επιλογή:",
@@ -1138,7 +1140,7 @@
 	"prefs-namespaces": "Περιοχές ονομάτων",
 	"default": "προεπιλογή",
 	"prefs-files": "Αρχεία",
-	"prefs-custom-css": "Προκαθορισμένη CSS",
+	"prefs-custom-css": "Προσαρμοσμένο CSS",
 	"prefs-custom-json": "Εξατομικευμένο JSON",
 	"prefs-custom-js": "Προσαρμοσμένη JavaScript",
 	"prefs-common-config": "Κοινά CSS/JSON/JavaScript για όλα τα θέματα εμφάνισης:",

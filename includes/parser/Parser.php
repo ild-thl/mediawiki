@@ -92,6 +92,7 @@ use Wikimedia\ScopedCallback;
  *
  * @ingroup Parser
  */
+#[AllowDynamicProperties]
 class Parser {
 	use DeprecationHelper;
 
@@ -3544,7 +3545,7 @@ class Parser {
 					$title,
 					$this
 				);
-			if ( !$revisionRecord ) {
+			if ( $revisionRecord === false ) {
 				// Parser::statelessFetchRevisionRecord() can return false;
 				// normalize it to null.
 				$revisionRecord = null;
